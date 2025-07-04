@@ -1,9 +1,0 @@
-{
-	"type":"createaddition:rolling",
-	"input": {
-		"tag": "forge:dough"
-	},
-	"result": {
-		"item": "pizzadelight:flat_dough"
-	}
-}

@@ -1,0 +1,15 @@
+{
+    "type": "create:cutting",
+    "ingredients": [
+        {
+            "item": "pizzadelight:pizza"
+        }
+    ],
+    "processingTime": 50,
+    "results": [
+        {
+            "count": 8,
+            "id": "pizzadelight:pizza_slice"
+        }
+    ]
+}

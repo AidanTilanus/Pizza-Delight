@@ -1,0 +1,16 @@
+{
+	"type": "create:deploying",
+	"ingredients": [
+		{
+			"item": "minecraft:bread"
+		},
+		{
+			"item": "pizzadelight:cheese_slice"
+		}
+	],
+	"results": [
+		{
+			"id": "pizzadelight:cheese_bread"
+		}
+	]
+}

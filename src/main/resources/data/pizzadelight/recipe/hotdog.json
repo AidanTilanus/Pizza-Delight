@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "pizzadelight:cooked_sausage"
+		},
+		{
+			"item": "minecraft:bread"
+		}
+	],
+	"result": {
+		"id": "pizzadelight:hotdog"
+	}
+}

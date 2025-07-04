@@ -1,0 +1,9 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+		"tag": "c:doughs"
+	},
+	"result": {
+		"id": "pizzadelight:flat_dough"
+	}
+}

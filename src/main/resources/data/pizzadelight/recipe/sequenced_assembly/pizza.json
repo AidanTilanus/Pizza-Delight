@@ -1,0 +1,66 @@
+{
+	"type": "create:sequenced_assembly",
+	"ingredient": {
+		"item": "pizzadelight:flat_dough"
+	},
+	"loops": 1,
+	"results": [
+		{
+			"id": "pizzadelight:pizza"
+		}
+	],
+	"sequence": [
+		{
+			"type": "create:filling",
+			"ingredients": [
+				{
+					"item": "pizzadelight:incomplete_pizza"
+				},
+				{
+					"amount": 250,
+					"fluid": "create_central_kitchen:tomato_sauce"
+				}
+			],
+			"results": [
+				{
+					"id": "pizzadelight:incomplete_pizza"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "pizzadelight:incomplete_pizza"
+				},
+				{
+					"item": "pizzadelight:cheese_slice"
+				}
+			],
+			"results": [
+				{
+					"id": "pizzadelight:incomplete_pizza"
+				}
+			]
+		},
+		{
+			"type": "create:deploying",
+			"ingredients": [
+				{
+					"item": "pizzadelight:incomplete_pizza"
+				},
+				{
+					"item": "pizzadelight:raw_sausage"
+				}
+			],
+			"results": [
+				{
+					"id": "pizzadelight:incomplete_pizza"
+				}
+			]
+		}
+	],
+	"transitional_item": {
+		"id": "pizzadelight:incomplete_pizza"
+	}
+}

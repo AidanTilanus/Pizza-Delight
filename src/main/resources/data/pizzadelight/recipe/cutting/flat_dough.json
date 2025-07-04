@@ -1,0 +1,20 @@
+{
+	"type": "farmersdelight:cutting",
+	"ingredients": [
+		{
+			"tag": "c:dough"
+		}
+	],
+	"result": [
+		{
+			"id": "pizzadelight:flat_dough"
+		},
+		{
+			"chance": 0.15,
+			"id": "create:wheat_flour"
+		}
+	],
+	"tool": {
+		"item": "pizzadelight:rolling_pin"
+	}
+}

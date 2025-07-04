@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smoking",
+	"ingredient": {
+		"item": "pizzadelight:raw_sausage"
+	},
+	"result": {
+		"id": "pizzadelight:cooked_sausage",
+		"count": 1
+	},
+	"experience": 0.1,
+	"cookingtime": 100
+}

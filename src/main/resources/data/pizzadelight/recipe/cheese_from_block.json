@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "pizzadelight:cheese_block"
+		}
+	],
+	"result": {
+		"id": "pizzadelight:cheese_slice",
+		"count": 9
+	}
+}

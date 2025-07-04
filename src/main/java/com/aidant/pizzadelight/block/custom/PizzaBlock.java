@@ -1,10 +1,13 @@
 package com.aidant.pizzadelight.block.custom;
 
+import com.aidant.pizzadelight.item.ModItems;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -26,7 +29,7 @@ import java.util.function.Supplier;
 
 public class PizzaBlock extends Block {
 
-    private static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
+    public static final IntegerProperty BITES = IntegerProperty.create("bites", 0, 3);
     private static final VoxelShape PIZZA_SHAPE = Shapes.box(0, 0, 0, 1, 0.25, 1);
 
     private final Supplier<Item> sliceItem;
@@ -35,8 +38,6 @@ public class PizzaBlock extends Block {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(BITES, 0));
         this.sliceItem = sliceItem;
-
-
     }
 
     @Override
@@ -58,33 +59,6 @@ public class PizzaBlock extends Block {
     public int getAnalogOutputSignal(@NotNull BlockState state, Level level, BlockPos pos) {
         int bites = state.getValue(BITES);
         return (4 - bites) * 15 / 4;
-    }
-
-    @Override
-    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
-        if (!level.isClientSide) {
-            ItemStack heldItem = player.getItemInHand(hand);
-            int bites = state.getValue(BITES);
-
-            if (heldItem.is(ItemTags.create(new ResourceLocation("forge", "tools/knives")))) {
-                ItemStack dropStack = new ItemStack(this.sliceItem.get(), 2); // Use Supplier to get the item
-                popResource(level, pos, dropStack);
-
-                // damage the knife
-                heldItem.hurtAndBreak(1, player, (p) -> {
-                    p.broadcastBreakEvent(hand); // Notify other players of the tool breaking
-                });
-
-                if (bites < 3) {
-                    level.setBlock(pos, state.setValue(BITES, bites + 1), 3);
-                } else {
-                    level.removeBlock(pos, false);
-                }
-
-                return InteractionResult.SUCCESS;
-            }
-        }
-        return InteractionResult.PASS;
     }
 
     @Override
@@ -114,5 +88,9 @@ public class PizzaBlock extends Block {
     @Override
     protected void createBlockStateDefinition(StateDefinition.@NotNull Builder<Block, BlockState> builder) {
         builder.add(BITES);
+    }
+
+    public Holder<Item> getSliceItem() {
+        return ModItems.PIZZA_SLICE;
     }
 }
