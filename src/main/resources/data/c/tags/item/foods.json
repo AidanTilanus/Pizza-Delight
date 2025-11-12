@@ -1,0 +1,11 @@
+{
+	"replace": false,
+	"values": [
+		"pizzadelight:cheese_slice",
+		"pizzadelight:cheese_bread",
+		"pizzadelight:raw_sausage",
+		"pizzadelight:cooked_sausage",
+		"pizzadelight:hotdog",
+		"pizzadelight:pizza_slice"
+	]
+}

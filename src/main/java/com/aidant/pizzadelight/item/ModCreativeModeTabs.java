@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
     public static final Supplier<CreativeModeTab> PIZZA_DELIGHT_TAB = CREATIVE_MODE_TAB.register("pizzadelight_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("creativetab.pizzadelight_tab"))
-                    .icon(() -> new ItemStack(ModItems.ROLLING_PIN.get()))
+                    .icon(() -> new ItemStack(ModBlocks.PIZZA.get()))
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.ROLLING_PIN.get());
 

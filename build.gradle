@@ -135,6 +135,8 @@ dependencies {
     implementation files('libs/FarmersDelight-1.21.1-1.2.8.jar')
 
     implementation files('libs/jei-1.21.1-neoforge-19.21.2.313.jar')
+    implementation files('libs/create-dragons-plus-1.6.1.jar')
+    implementation files('libs/create-integrated-farming-1.0.6.jar')
 
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html

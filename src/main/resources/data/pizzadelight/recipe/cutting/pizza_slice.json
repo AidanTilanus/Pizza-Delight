@@ -7,11 +7,13 @@
     ],
     "result": [
         {
-            "count": 8,
-            "id": "pizzadelight:pizza_slice"
+            "item": {
+                "count": 8,
+                "id": "pizzadelight:pizza_slice"
+            }
         }
     ],
     "tool": {
-        "tag": "forge:tools/knives"
+        "tag": "c:tools/knife"
     }
 }

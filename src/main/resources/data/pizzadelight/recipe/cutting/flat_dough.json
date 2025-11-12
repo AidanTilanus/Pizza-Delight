@@ -2,16 +2,22 @@
 	"type": "farmersdelight:cutting",
 	"ingredients": [
 		{
-			"tag": "c:dough"
+			"tag": "c:doughs"
 		}
 	],
 	"result": [
 		{
-			"id": "pizzadelight:flat_dough"
+			"item": {
+				"id": "pizzadelight:flat_dough",
+				"count": 1
+			}
 		},
 		{
-			"chance": 0.15,
-			"id": "create:wheat_flour"
+			"item": {
+				"id": "create:wheat_flour",
+				"count": 1
+			},
+			"chance": 0.15
 		}
 	],
 	"tool": {

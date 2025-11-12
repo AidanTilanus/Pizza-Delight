@@ -11,19 +11,21 @@
 	],
 	"sequence": [
 		{
-			"type": "create:filling",
+			"type": "create:deploying",
 			"ingredients": [
 				{
 					"item": "pizzadelight:incomplete_pizza"
 				},
 				{
-					"amount": 250,
-					"fluid": "create_central_kitchen:tomato_sauce"
+					"item": "farmersdelight:tomato_sauce"
 				}
 			],
 			"results": [
 				{
 					"id": "pizzadelight:incomplete_pizza"
+				},
+				{
+					"id": "minecraft:bowl"
 				}
 			]
 		},

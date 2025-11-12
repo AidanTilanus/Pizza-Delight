@@ -1,24 +1,7 @@
 {
-    "parent": "minecraft:nether/distract_piglin",
-    "criteria": {
-        "trade_cheese_slice": {
-            "trigger": "minecraft:thrown_item_picked_up_by_entity",
-            "conditions": {
-                "player": {
-                    "type": "minecraft:player"
-                },
-                "item": {
-                    "item": "pizzadelight:cheese_slice"
-                },
-                "entity": {
-                    "type": "minecraft:piglin"
-                }
-            }
-        }
-    },
     "display": {
         "icon": {
-            "item": "pizzadelight:cheese_slice"
+            "id": "pizzadelight:cheese_slice"
         },
         "title": {
             "translate": "pizzadelight.advancement.scammer"
@@ -26,10 +9,29 @@
         "description": {
             "translate": "pizzadelight.advancement.scammer.desc"
         },
-        "frame": "challenge",
-        "hidden": true
+        "frame": "task"
     },
+    "parent": "minecraft:nether/distract_piglin",
+    "criteria": {
+        "trade_cheese_slice": {
+            "trigger": "minecraft:thrown_item_picked_up_by_entity",
+            "conditions": {
+                "item": {
+                    "items": "pizzadelight:cheese_slice"
+                },
+                "entity": {
+                    "type": "minecraft:piglin"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trade_cheese_slice"
+        ]
+    ],
     "rewards": {
+        "loot": [],
         "experience": 200
     }
 }
