@@ -1,0 +1,24 @@
+{
+    "item.pizzadelight.rolling_pin": "Kavel",
+    "item.pizzadelight.cheese": "Ost",
+    "item.pizzadelight.cheese_slice": "Ostskiva",
+    "item.pizzadelight.cheese_bread": "Ostmacka",
+    "item.pizzadelight.flat_dough": "Platt deg",
+    "item.pizzadelight.raw_sausage": "Rå korv",
+    "item.pizzadelight.cooked_sausage": "Tillagad korv",
+    "item.pizzadelight.hotdog": "Korv med bröd",
+    "item.pizzadelight.incomplete_pizza": "Ofärdig pizza",
+    "item.pizzadelight.pizza_slice": "Pizzabit",
+
+    "block.pizzadelight.cheese_block": "Ostblock",
+    "block.pizzadelight.cheese_bricks": "Osttegel",
+    "block.pizzadelight.polished_cheese": "Polerad ost",
+    "block.pizzadelight.pizza": "Pizza",
+
+    "creativetab.pizzadelight_tab": "Pizza Delight",
+
+    "pizzadelight.advancement.cheese": "Osthjulet",
+    "pizzadelight.advancement.cheese.desc": "Skapa ost i en matlagningsgryta!",
+    "pizzadelight.advancement.scammer": "Bedragare!",
+    "pizzadelight.advancement.scammer.desc": "Försöka att lura en piglin till att byta med ost."
+}
